@@ -35,4 +35,9 @@ php artisan migrate
 php artisan db:seed
 php artisan serve
 ```
+- Open another terminal and run:
+```sh
+npm update
+npm run watch
+```
 - Go in your browser to `localhost:8000` and see the results
