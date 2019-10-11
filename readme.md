@@ -1,4 +1,4 @@
-# Trigger Sample Software
+# Flyht Sample Software
 
 ## Requirements
 
