@@ -115,7 +115,7 @@ export default {
         },
         DroppedStudents: function() {
             var droppedStudents = this.students.filter(function(student) {
-            if(student.status == Dropped')
+            if(student.status == 'Dropped')
                 return student;
             });                
             return droppedStudents; 
