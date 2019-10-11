@@ -1954,19 +1954,19 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     ActiveStudents: function ActiveStudents() {
       var activeStudents = this.students.filter(function (student) {
-        if (student.status == 'active') return student;
+        if (student.status == 'Active') return student;
       });
       return activeStudents;
     },
     DroppedStudents: function DroppedStudents() {
       var droppedStudents = this.students.filter(function (student) {
-        if (student.status == 'dropped') return student;
+        if (student.status == 'Dropped') return student;
       });
       return droppedStudents;
     },
     DelinquentStudents: function DelinquentStudents() {
       var delinquentStudents = this.students.filter(function (student) {
-        if (student.status == 'delinquent') return student;
+        if (student.status == 'Delinquent') return student;
       });
       return delinquentStudents;
     }
@@ -2195,6 +2195,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       } else if (type == 'cancel') {
         this.showForm = false;
         this.updateShow = true;
+        this.paginationNav = true;
       }
 
       this.edit = false;
@@ -56951,7 +56952,7 @@ var render = function() {
           "div",
           { staticClass: "col-3" },
           [
-            _c("h3", [_vm._v("Active ")]),
+            _vm._m(0),
             _vm._v(" "),
             _c(
               "draggable",
@@ -56985,7 +56986,7 @@ var render = function() {
           "div",
           { staticClass: "col-3" },
           [
-            _c("h3", [_vm._v("Dropped ")]),
+            _vm._m(1),
             _vm._v(" "),
             _c(
               "draggable",
@@ -57019,7 +57020,7 @@ var render = function() {
           "div",
           { staticClass: "col-3" },
           [
-            _c("h3", [_vm._v("Delinquent ")]),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "draggable",
@@ -57051,7 +57052,32 @@ var render = function() {
       ])
     : _vm._e()
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", [
+      _c("span", { staticClass: "badge badge-success" }, [_vm._v("Active")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", [
+      _c("span", { staticClass: "badge badge-danger" }, [_vm._v("Dropped")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", [
+      _c("span", { staticClass: "badge badge-info" }, [_vm._v("Delinquent")])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -73412,8 +73438,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\wamp64\www\flyhtTest\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\wamp64\www\flyhtTest\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\wamp64\www\FlyhtTest\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\wamp64\www\FlyhtTest\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

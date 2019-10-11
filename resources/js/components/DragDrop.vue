@@ -1,7 +1,7 @@
 <template>
   <div class="row" v-if="showDrDr">
     <div class="col-3">
-      <h3>Active </h3>
+      <h3> <span class="badge badge-success">Active</span></h3>
       <draggable class="list-group" :list="ActiveStudents" group="people" @change="makeActive">      
         <div  
           class="list-group-item"
@@ -13,7 +13,7 @@
       </draggable>
     </div>
     <div class="col-3">
-      <h3>Dropped </h3>
+      <h3><span class="badge badge-danger">Dropped</span> </h3>
       <draggable class="list-group" :list="DroppedStudents" group="people" @change="makeDropped" >
         <div
           class="list-group-item"
@@ -25,7 +25,7 @@
       </draggable>
     </div>
     <div class="col-3">
-      <h3>Delinquent </h3>
+      <h3><span class="badge badge-info">Delinquent</span> </h3>
       <draggable class="list-group" :list="DelinquentStudents" group="people" @change="makeDel">
         <div
           class="list-group-item"
