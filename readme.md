@@ -37,7 +37,7 @@ php artisan serve
 ```
 - Open another terminal and run:
 ```sh
-npm update
+npm install
 npm run watch
 ```
 - Go in your browser to `localhost:8000` and see the results
