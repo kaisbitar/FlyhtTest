@@ -28,7 +28,7 @@ DB_PASSWORD=
 ```sh
 composer install
 ```
-- After the installation takes place, run the command:
+- After the installation takes place, run:
 ```sh
 php artisan key:generate
 php artisan migrate
