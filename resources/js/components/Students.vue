@@ -213,6 +213,7 @@ export default {
             else if(type == 'cancel'){
                 this.showForm = false;
                 this.updateShow = true;
+                this.paginationNav = true;
             }
             this.edit = false
             this.student.id = '';
