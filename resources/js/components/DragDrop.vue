@@ -108,21 +108,21 @@ export default {
     computed: {
         ActiveStudents: function() {
             var activeStudents = this.students.filter(function(student) {
-            if(student.status == 'active')
+            if(student.status == 'Active')
                 return student;
             });                
             return activeStudents;
         },
         DroppedStudents: function() {
             var droppedStudents = this.students.filter(function(student) {
-            if(student.status == 'dropped')
+            if(student.status == Dropped')
                 return student;
             });                
             return droppedStudents; 
         },
         DelinquentStudents: function() {
             var delinquentStudents = this.students.filter(function(student) {
-            if(student.status == 'delinquent')
+            if(student.status == 'Delinquent')
                 return student;
             });                
             return delinquentStudents;
